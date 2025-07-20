@@ -85,6 +85,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
+    vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/poweropt-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/poweropt-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
@@ -99,39 +100,27 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
+    vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
+    vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perf-profile1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile1.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perf-profile2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile2.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perf-profile3.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile3.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perf-profile4.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile4.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perf-profile5.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile5.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perf-profile6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile6.conf \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
-    vendor/oneplus/sdm845-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_s6e3fc2x01_cmd_mode_dsi_panel.xml \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_sofef00_m_cmd_mode_dsi_panel.xml \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
+    vendor/oneplus/sdm845-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/oneplus/sdm845-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
@@ -393,9 +382,6 @@ PRODUCT_PACKAGES += \
     libmmosal_vendor \
     libnetmgr \
     libopf \
-    libperfconfig \
-    libperfgluelayer \
-    libperfioctl \
     libqcci_legacy \
     libqcmaputils \
     libqdi \
@@ -409,9 +395,6 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmi_legacy \
     libqmiservices \
-    libqti-perfd-client \
-    libqti-perfd \
-    libqti-util \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -590,6 +573,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
+    vendor.qti.hardware.servicetrackeraidl-impl \
     vendor.qti.hardware.soter@1.0-impl \
     lib-imscmservice \
     lib-imsdpl \
@@ -611,8 +595,12 @@ PRODUCT_PACKAGES += \
     libQTEEConnector_vendor \
     libSecureUILib \
     libStDrvInt \
+    libadaptlaunch \
     libadsp_default_listener \
     libaoa \
+    libaodoptfeature \
+    libapengine \
+    libappclassifier \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
@@ -632,6 +620,7 @@ PRODUCT_PACKAGES += \
     libdpmqmihal \
     libdrmfs \
     libdrmtime \
+    libgamepoweroptfeature \
     libgdtap \
     libgeofencing \
     libgnss \
@@ -647,6 +636,10 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    liblearningmodule \
+    liblightninglaunches \
+    liblmthermallistner \
+    liblmutils-ns \
     libloc_api_v02 \
     libloc_core \
     libloc_socket \
@@ -657,6 +650,9 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmdmimgload \
+    libmemperfd \
+    libmeters-ns \
+    libmeters \
     libminkdescriptor \
     libminksocket \
     libnetmgr_common \
@@ -665,11 +661,23 @@ PRODUCT_PACKAGES += \
     libnlnetmgr \
     liboemcrypto \
     liboemnvbk_img_helper \
+    liboffscreenpoweroptfeature \
     libparam_vendor \
     libpdmapper \
     libpdnotifier \
+    libperfconfig \
+    libperfgluelayer \
+    libperfioctl \
     libperipheral_client \
     libpn553_fw \
+    libpowercallback \
+    libpowercore \
+    libprefapps \
+    libprekill \
+    libprocomp \
+    libpsmoptfeature \
+    libq-perflog \
+    libqapesdk \
     libqcbor \
     libqcc_file_agent \
     libqcrilFramework \
@@ -679,8 +687,14 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqseed3 \
     libqsocket \
+    libqspm-mem-utils-vendor \
     libqti-iopd-client \
     libqti-iopd \
+    libqti-perfd-client \
+    libqti-perfd \
+    libqti-qesdk-secure \
+    libqti-util \
+    libqti-utils \
     librcc \
     libril-qc-hal-qmi \
     libril-qc-logger \
@@ -698,6 +712,8 @@ PRODUCT_PACKAGES += \
     libsecureui_svcsock \
     libsensorcal \
     libsettings \
+    libsilkyscrolls \
+    libskewknob \
     libslimclient \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
@@ -705,14 +721,17 @@ PRODUCT_PACKAGES += \
     libsnsdiaglog \
     libspcom \
     libspl \
+    libsplh \
     libssc \
     libssc_default_listener \
     libssd \
+    libstandbyfeature \
     libsystem_health_mon \
     libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
+    libvideooptfeature \
     libwms \
     libwqe \
     libwvhidl \
@@ -764,8 +783,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.iop@1.0 \
-    vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.iop@2.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0 \
+    vendor.qti.hardware.perf2-V1-ndk_vendor \
+    vendor.qti.hardware.power.powermodule-V1-ndk \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
     vendor.qti.hardware.qccvndhal@1.0 \
@@ -811,6 +832,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0-service-Impl \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
+    vendor.qti.memory.pasrmanager-V1-ndk \
+    vendor.qti.qspmhal-V1-ndk_vendor \
+    vendor.qti.qspmhal-impl \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
     dirac_resource \
@@ -841,8 +865,6 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
-    libmmosal \
-    libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
     libwfdclient \
@@ -895,6 +917,10 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
+    vendor.qti.hardware.perf2.xml \
+    vendor.qti.hardware.power.powermodule.xml \
+    vendor.qti.hardware.servicetrackeraidl-service.xml \
+    vendor.qti.qspmhal-service.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -917,11 +943,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
-    vendor.qti.hardware.perf@2.2-service \
+    vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qccvndhal@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
+    vendor.qti.hardware.servicetrackeraidl-service \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     ims_rtp_daemon \
@@ -943,6 +970,7 @@ PRODUCT_PACKAGES += \
     pm-service \
     port-bridge \
     power_off_alarm \
+    poweropt-service \
     ppd \
     qrtr-cfg \
     qrtr-lookup \
@@ -958,6 +986,7 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
+    vendor.qti.qspmhal-service \
     vppservice \
     wfdhdcphalservice \
     wfdvndservice \
