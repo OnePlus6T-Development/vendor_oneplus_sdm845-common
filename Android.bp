@@ -17375,6 +17375,7 @@ cc_prebuilt_library_shared {
                 "libaudioclient",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
+                "libqdMetaData",
                 "libhidlbase",
                 "vendor.qti.hardware.wifidisplaysession@1.0",
                 "libc++",
