@@ -440,7 +440,6 @@ PRODUCT_PACKAGES += \
     com.vidhance.stats.aec_dmbr \
     camera.qcom \
     com.qti.chi.override \
-    sound_trigger.primary.sdm845 \
     libFileMux_proprietary \
     libSTDualCamCaptureBokeh \
     libSTDualCamPreviewBokeh \
